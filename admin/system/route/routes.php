@@ -1,0 +1,114 @@
+<?php
+	switch(@$_GET['page']){
+		default;
+		case"dashboard";
+		include("page/dashboard.php");
+		break;
+
+//pendaftaran
+		case"pendaftaran";
+		include("system/pendaftaran/data_pendaftaran.php");
+		break;
+case"tambah_pendaftaran";
+		include("system/pendaftaran/tambah_pendaftaran.php");
+		break;
+		case"edit_pendaftaran";
+		include("system/pendaftaran/edit_pendaftaran.php");
+		break;
+		case"data_konfirmasi";
+		include("system/pendaftaran/data_konfirmasi.php");
+		break;
+		case"konfirmasi_pendaftaran";
+		include("system/pendaftaran/konfirmasi_pendaftaran.php");
+		break;
+		case"konfirmasi_pendaftaran_proses";
+		include("system/pendaftaran/konfirmasi.php");
+		break;
+
+//wawancara
+		case"wawancara";
+		include("system/wawancara/data_wawancara.php");
+		break;
+		case"tambah_wawancara";
+		include("system/wawancara/tambah_wawancara.php");
+		include("system/wawancara/modal_cari_pendaftaran.php");
+		break;
+		case"pendaftaran_seminar";
+		include("system/wawancara/pendaftaran_seminar.php");
+		break;
+		case"tambah_soal";
+		include("system/wawancara/tambah_soal.php");
+		break;
+		case"soal_wawancara";
+		include("system/wawancara/data_soal.php");
+		break;
+		case"edit_soal";
+		include("system/wawancara/edit_soal.php");
+		break;
+		case"data_seminar";
+		include("system/wawancara/data_seminar.php");
+		break;
+	//regulasi	
+case"tambah_regulasi";
+		include("system/regulasi/tambah_regulasi.php");
+		break;
+case"update_regulasi";
+		include("system/regulasi/update_regulasi.php");
+		break;
+//pendaftaran seminar
+case"tambah_seminar";
+		include("system/seminar/tambah.php");
+		break;
+
+//pegawai
+case"tambah_pegawai";
+		include("system/pegawai/tambah_pegawai.php");
+		break;
+
+case"data_pegawai";
+		include("system/pegawai/data_pegawai.php");
+		break;
+//survey
+case"pilih_surveyor";
+		include("system/survey/pilih_surveyor.php");
+		break;
+case"data_kls";
+		include("system/survey/data_kls.php");
+		break;
+case"tambah_data_survey";
+		include("system/survey/tambah_data_survey.php");
+		include("system/survey/modal_cari_kls.php");
+		break;
+case"data_survey_surveyor";
+		include("system/survey/data_survey_surveyor.php");
+		break;
+case"detail_data_survey";
+		include("system/survey/detail_data_survey.php");
+		break;
+case"list_survey";
+		include("system/survey/list_survey.php");
+		break;
+case"hasil_survey";
+		include("system/survey/hasil_survey.php");
+		break;
+case"seleksi";
+		include("system/survey/seleksi.php");
+		break;
+case"seleksi_proses";
+		include("system/survey/seleksi_proses.php");
+		break;
+case"laporan_seleksi";
+		include("system/survey/laporan_lulus_seleksi.php");
+		break;
+
+//kontrak belajar
+
+case"kontrak_pelatihan";
+		include("system/seleksi/cetak_kontrak_belajar.php");
+		break;
+case"data_list_kontrak";
+		include("system/seleksi/list_data_kontrak.php");
+		break;
+}
+
+		?>
